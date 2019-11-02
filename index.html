@@ -11,9 +11,9 @@
     <h1 id="title">Survey Form </h1>
     <p id="description">The survey is for study purposes. You have to answer all the sections</p>
     <form id="survey-form">
-      <input type="text" name="name" id="name" placeholder="Full name" required />
-      <input type="email" name="email" id="email"  placeholder="email@domain.com" required/>
-      <input type="number" name="number" id="number" min="1" max="20" placeholder="1">
+      <label id="name-label" for="name">Name<input type="text" name="name" id="name" placeholder="Full name" required /></label>
+      <label id= "email-label" for="email">Email<input type="email" name="email" id="email"  placeholder="email@domain.com" required/></label>
+      <label id="number-label" for="number">Number<input type="number" name="number" id="number" min="1" max="20" placeholder="1"></label>
       <div>
          <input type="radio" name="value" value="1">
          <span>Value 1</span>
@@ -30,8 +30,12 @@
         <option value="apple">Apple</option>
         <option value="mango">Mango</option>
       </select>
-
-
+      <input type="checkbox" name="Colors" value="Red"><span>Red</span>
+      <input type="checkbox" name="Colors" value="Blue"><span>Blue</span>
+      <input type="checkbox" name="Colors" value="Green"><span>Green</span>
+      
+      <textarea name="message" style="width:200px; height: 400px;">Write your message</textarea>
+      <input type="submit" id="submit" value="submit">
 
     </form>
 
